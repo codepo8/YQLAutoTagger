@@ -1,7 +1,5 @@
-YQLAutoTagger is a script that uses Yahoo's Term Extraction service to 
-analyse a form field and automatically fill a "tags" field with keywords 
-when the user moves away from the field. 
+YQLAutoTagger is a script that uses Yahoo's Term Extraction service to analyse a form field and automatically fill a "tags" field with keywords when the user moves away from the field. 
 
-Check out the <a href="http://wiki.github.com/codepo8/YQLAutoTagger">wiki</a> for documentation or see a demo at: http://isithackday.com/demos/yqlautotagger.html
+Check out the WIKI for the docs http://wiki.github.com/codepo8/YQLAutoTagger or see a demo at http://isithackday.com/demos/yqlautotagger.html.
 
 Enjoy, Chris.
