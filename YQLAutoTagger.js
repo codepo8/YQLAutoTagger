@@ -1,6 +1,6 @@
 /*
   YQLAutoTagger by Christian Heilmann
-  Homepage: http://isithackday.com/yqlautotagger
+  Homepage: http://github.com/codepo8/YQLAutoTagger/
   Copyright (c) 2009, Christian Heilmann
   Code licensed under the BSD License:
   http://wait-till-i.com/license.txt

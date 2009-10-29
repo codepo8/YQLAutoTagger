@@ -8,11 +8,16 @@
   <link rel="stylesheet" href="http://yui.yahooapis.com/2.7.0/build/base/base.css" type="text/css">
   <style type="text/css" media="screen">
     .loading{background:#cfc;}
+    label{display:block;font-weight:bold;margin:.5em 0;}
+    textarea,#tags{
+      width:100%;
+      margin:.5em 0;
+    }
   </style>
 </head>
 <body>
 <div id="doc" class="yui-t7">
-  <div id="hd" role="banner"><h1></h1></div>
+  <div id="hd" role="banner"><h1>YQLAutoTagger Demo</h1></div>
   <div id="bd" role="main">
     <h2>Demo</h2>
     <p>Simply alter the text in the following field and move away from the field (either with mouse or your keyboard) - YQLAutoTagger will analyse the text and fill the tags field with the keywords found.</p>
@@ -22,15 +27,12 @@
       <div><label for="tags">Tags:</label><input type="text" id="tags" name="tags"></div>
       <div><input type="submit" value="Make it so!"></div>
     </form>
-    <h2>Usage</h2>
-    <p>To use YQLAutoTagger, simply include the script in your page and call the <code>init()</code> method with the IDs of the field you want to analyse and the tag field to fill out.</p>
-    
-    
-    
+    <h2>Download and Documentation</h2>
+    <p>Go over to GitHub to read the docs and download the scripts: <a href="http://github.com/codepo8/YQLAutoTagger/">http://github.com/codepo8/YQLAutoTagger/</a>.</p>
   </div>
-  <div id="ft" role="contentinfo"><p></p></div>
+  <div id="ft" role="contentinfo"><p>Written by <a href="http://wait-till-i.com">Christian Heilmann</a></p></div>
 </div>
-<script type="text/javascript" src="YQLAutoTagger.js">
+<script type="text/javascript" src="http://github.com/codepo8/YQLAutoTagger/raw/master/YQLAutoTagger.js">
 </script>
 <script type="text/javascript">
 YQLAutoTagger.config.tagDelimiter = ',';
