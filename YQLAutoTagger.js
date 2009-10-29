@@ -18,10 +18,10 @@ YQLAutoTagger = function(){
     tagField = document.getElementById(output);
     if(inputField && tagField){
       addEvent(inputField,'blur',function(){
+        var content = inputField.value.replace('"','');
         var url = 'http://query.yahooapis.com/v1/public/yql?'+
                   'q=select%20*%20from%20search.termextract%20'+
-                  'where%20context%3D%22'+
-                  encodeURIComponent(inputField.value)+ 
+                  'where%20context%3D%22'+encodeURIComponent(content)+ 
                   '%22&format=json&callback=YQLAutoTagger.received';
         var s = document.createElement('script');
         s.setAttribute('type','text/javascript');
