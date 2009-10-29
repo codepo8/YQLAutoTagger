@@ -37,14 +37,14 @@ YQLAutoTagger = function(){
     }
   }
   function YQLreceived(o){
+    if(cfg.disableField === true){
+      tagField.removeAttribute('disabled');
+    }
+    if(cfg.loadingClass !== ''){
+      var cl = inputField.className;
+      inputField.className = cl.replace(cfg.loadingClass,'');
+    }
     if(o.query && o.query.results){
-      if(cfg.disableField === true){
-        tagField.removeAttribute('disabled');
-      }
-      if(cfg.loadingClass !== ''){
-        var cl = inputField.className;
-        inputField.className = cl.replace(cfg.loadingClass,'');
-      }
       var tags = o.query.results.Result;
       if(typeof tags!=='string'){
         if(cfg.addQuotes === true){
