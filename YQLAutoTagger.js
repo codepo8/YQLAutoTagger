@@ -17,11 +17,12 @@ YQLAutoTagger = function(){
     inputField = document.getElementById(input);
     tagField = document.getElementById(output);
     if(inputField && tagField){
-      var url = 'http://query.yahooapis.com/v1/public/yql?'+
-                'q=select%20*%20from%20search.termextract%20'+
-                'where%20context%3D%22'+encodeURIComponent(inputField.value)+ 
-                '%22&format=json&callback=YQLAutoTagger.received';
       addEvent(inputField,'blur',function(){
+        var url = 'http://query.yahooapis.com/v1/public/yql?'+
+                  'q=select%20*%20from%20search.termextract%20'+
+                  'where%20context%3D%22'+
+                  encodeURIComponent(inputField.value)+ 
+                  '%22&format=json&callback=YQLAutoTagger.received';
         var s = document.createElement('script');
         s.setAttribute('type','text/javascript');
         s.setAttribute('src',url);
