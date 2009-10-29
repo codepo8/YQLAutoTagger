@@ -32,7 +32,7 @@ YQLAutoTagger = function(){
         if(cfg.loadingClass !== ''){
           inputField.className += cfg.loadingClass;
         }
-      });          
+      },false);          
     }
   }
   function YQLreceived(o){
