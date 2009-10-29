@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+ "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
+  <title></title>
+  <link rel="stylesheet" href="http://yui.yahooapis.com/2.7.0/build/reset-fonts-grids/reset-fonts-grids.css" type="text/css">
+  <link rel="stylesheet" href="http://yui.yahooapis.com/2.7.0/build/base/base.css" type="text/css">
+  <style type="text/css" media="screen">
+    .loading{background:#cfc;}
+  </style>
+</head>
+<body>
+<div id="doc" class="yui-t7">
+  <div id="hd" role="banner"><h1></h1></div>
+  <div id="bd" role="main">
+    <h2>Demo</h2>
+    <p>Simply alter the text in the following field and move away from the field (either with mouse or your keyboard) - YQLAutoTagger will analyse the text and fill the tags field with the keywords found.</p>
+    <form action="#" method="get" accept-charset="utf-8">
+      <div><label for="mainfield">Your Message:</label>
+      <textarea id="mainfield" name="mainfield">Hello I am a programmer that does care about interfaces. What kind of library can I use that gives me a defined set of widgets that have been tested in the real world?</textarea></div>
+      <div><label for="tags">Tags:</label><input type="text" id="tags" name="tags"></div>
+      <div><input type="submit" value="Make it so!"></div>
+    </form>
+    <h2>Usage</h2>
+    <p>To use YQLAutoTagger, simply include the script in your page and call the <code>init()</code> method with the IDs of the field you want to analyse and the tag field to fill out.</p>
+    
+    
+    
+  </div>
+  <div id="ft" role="contentinfo"><p></p></div>
+</div>
+<script type="text/javascript" src="YQLAutoTagger.js">
+</script>
+<script type="text/javascript">
+YQLAutoTagger.config.tagDelimiter = ',';
+YQLAutoTagger.init('mainfield','tags');
+</script>
+</body>
+</html>
