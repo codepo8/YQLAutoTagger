@@ -37,7 +37,7 @@ YQLAutoTagger = function(){
     }
   }
   function YQLreceived(o){
-    if(o.query.results){
+    if(o.query && o.query.results){
       if(cfg.disableField === true){
         tagField.removeAttribute('disabled');
       }
